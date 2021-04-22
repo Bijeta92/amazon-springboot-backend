@@ -39,6 +39,12 @@ public class AmazonController {
 
 
 
+    @GetMapping("/")
+    public ResponseEntity getHomePage(){
+        var customizedResponse = new CustomizedResponse("Welcome to Amazon Clone Backend", null);
+        return new ResponseEntity(customizedResponse, HttpStatus.NOT_FOUND);
+    }
+
 
     @GetMapping("/products")
     public ResponseEntity getProducts(){
