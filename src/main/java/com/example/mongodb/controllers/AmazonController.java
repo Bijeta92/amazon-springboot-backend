@@ -23,7 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://arcane-spire-10716.herokuapp.com/")
 @RestController
 public class AmazonController {
 
@@ -41,7 +41,7 @@ public class AmazonController {
 
     @GetMapping("/")
     public ResponseEntity getHomePage(){
-        var customizedResponse = new CustomizedResponse("Welcome to Amazon Clone Backend", null);
+        var customizedResponse = new CustomizedResponse("Welcome to Amazon Clone Backend", "null");
         return new ResponseEntity(customizedResponse, HttpStatus.NOT_FOUND);
     }
 
