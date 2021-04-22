@@ -23,7 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://arcane-spire-10716.herokuapp.com/")
+@CrossOrigin(origins = "https://arcane-spire-10716.herokuapp.com")
 @RestController
 public class AmazonController {
 
